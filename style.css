@@ -1,19 +1,11 @@
+body {
+  margin-bottom: 100px;
+}
 :root {
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.body {
-  margin: 60px auto;
-  max-width: 800px;
-}
-
-h1,
-h2,
-h3 {
-  text-align: center;
-  margin: 0;
+  --third-color: #8477a6;
 }
 
 h1 {
@@ -28,8 +20,9 @@ h3 {
   font-size: 24px;
   opacity: 0.7;
 }
-h4 {
+.app-name {
   font-size: 48px;
+  font-weight: normal;
 }
 
 .navigation-links {
@@ -69,7 +62,7 @@ h4 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .email-link {
@@ -82,4 +75,40 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+  color: var(--third-color);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  .app-name {
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    text-align: center;
+  }
+  .app-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+  .email-link {
+    font-size: 20px;
+  }
+  .contact-me {
+    font-size: 25px;
+  }
 }
